@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+    <title>weather app</title>
+</head>
+
+<body>
+
+    {{>nav}}
+    <!-- main header start -->
+    <div class="contanier-fluid ">
+        <div class="row">
+            <div class="col-md-12 col-12 max-auto ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12 header_left">
+                            <h3>Welcome to weather app</h3>
+                            <h1>Get The Latest <span>Weather</span> Info Of Your City</h1>
+                           <a href="/weather">
+                           <button class="cssbtn">CHECK NOW</button>
+                           </a> 
+                        </div>
+                        <div class="col-md-6 col-12 header_right">
+                            <!-- carousel -->
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner ">
+                                    <div class="carousel-item active">
+                                        <img src="/img/bg1.png" class="d-block w-100" alt="img1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/bg2.png" class="d-block w-100" alt="img2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/bg3.png" class="d-block w-100" alt="img3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <h1 class="about"> <u>Weather App</u> </h1>
+     {{>weathersection}}
+    <h1 class="about"> <u>About Me</u> </h1>
+
+    {{>aboutsection}}
+
+
+    {{>footer}}
+
+
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script src="/js/main.js"></script>
+
+</body>
+
+</html>
